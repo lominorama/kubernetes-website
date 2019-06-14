@@ -1,5 +1,5 @@
 ---
-title: Convierte un Fichero de Docker Compose a Recursos de Kubernetes
+title: Convierte un Archivo de Docker Compose a Recursos de Kubernetes
 content_template: templates/task
 weight: 170
 ---
@@ -55,9 +55,9 @@ go get -u github.com/kubernetes/kompose
 
 ## CentOS
 
-Kompose está incluído en el repositorio CentOS [EPEL](https://fedoraproject.org/wiki/EPEL).
+Kompose está incluido en el repositorio CentOS [EPEL](https://fedoraproject.org/wiki/EPEL).
 
-Si aún no tienes el repositorio [EPEL](https://fedoraproject.org/wiki/EPEL)  instalado y activado puedes hacerlo ejecutando el comando `sudo yum install epel-release`.
+Si aún no tienes el repositorio [EPEL](https://fedoraproject.org/wiki/EPEL) instalado y activado puedes hacerlo ejecutando el comando `sudo yum install epel-release`.
 
 Si ya tienes el [EPEL](https://fedoraproject.org/wiki/EPEL) habilitado en tu sistema puedes instalar Kompose como cualquier otro paquete.
 
@@ -84,9 +84,9 @@ brew install kompose
 
 ## Usar Kompose
 
-En solo unos pocos pasos te guiaremos en el proceso de migrar tu aplicación definida en Docker Compose a Kubernetes. Todo lo que necesitas es un fichero `docker-compose.yaml`.
+En solo unos pocos pasos te guiaremos en el proceso de migrar tu aplicación definida en Docker Compose a Kubernetes. Todo lo que necesitas es un archivo `docker-compose.yaml`.
 
-1.  Ve hasta el directorio que contiene tu fichero `docker-compose.yaml`. Si todavía no tienes uno, puedes probar usando este.
+1.  Ve hasta el directorio que contiene tu archivo `docker-compose.yaml`. Si todavía no tienes uno, puedes probar usando este.
 
       ```yaml
       version: "2"
@@ -115,7 +115,7 @@ En solo unos pocos pasos te guiaremos en el proceso de migrar tu aplicación def
             kompose.service.type: LoadBalancer
       ```
 
-2.  Ejecuta el comando `kompose up` para desplegarlo en Kubernetes directamente. En caso contrario sáltate este paso para generar un fichero y desplegarlo con `kubectl`.
+2.  Ejecuta el comando `kompose up` para desplegarlo en Kubernetes directamente. En caso contrario sáltate este paso para generar un archivo y desplegarlo con `kubectl`.
 
 
       ```bash
